@@ -4,19 +4,6 @@ import com.revature.exception.BounceException;
 
 public class User {
 	
-	
-	/*
-	 * CREATE TABLE BANKACCOUNT
-(
-  ACCOUNT_ID NUMBER,
-  B_USER VARCHAR2(100) NOT NULL,
-  B_PASSWORD VARCHAR2(100) NOT NULL,
-  B_BALANCE NUMBER(38,3) DEFAULT 0,
-  CONSTRAINT PK_BANKACCOUNT PRIMARY KEY (ACCOUNT_ID)
-);
-	 * 
-	 */
-
 	private long userId;
 	private String username;
 	private String password;
@@ -90,14 +77,12 @@ public class User {
 		return result;
 	}
 
-	//login check
 	public boolean authenticate(String username, String password) {
 		
 		if(this.username.equals(username) && this.password.equals(password)){
 			return true;
 		}
 		
-		//add exception?
 		return false;
 	}
 	
@@ -133,8 +118,5 @@ public class User {
 		return "BankAccount [userId=" + userId + ", username=" + username + ", password=" + password
 				+ ", balance=" + balance + "]";
 	};
-	
-	
-	
-	
+		
 }

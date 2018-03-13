@@ -2,7 +2,7 @@ package com.revature.service;
 
 import org.apache.log4j.Logger;
 
-import com.revature.exception.InvalidCredentialException;
+import com.revature.exception.RejectCredentialsException;
 import com.revature.exception.BounceException;
 import com.revature.model.User;
 import com.revature.repository.UserRepository;
@@ -30,7 +30,7 @@ public class ServiceUtil {
 	}
 	
 	
-	public User login(String user, String password) throws InvalidCredentialException{
+	public User login(String user, String password) throws RejectCredentialsException{
 		if(repository.findByUsername(user) != null){
 			User account = repository.findByUsername(user);
 
@@ -41,7 +41,7 @@ public class ServiceUtil {
 				return account;
 			}
 		} else {
-			throw new InvalidCredentialException("Invalid credentials, please try again.");
+			throw new RejectCredentialsException("Invalid credentials, please try again.");
 		}
 		return null;
 	}

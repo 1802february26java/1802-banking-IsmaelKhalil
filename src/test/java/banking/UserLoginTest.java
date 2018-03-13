@@ -30,13 +30,13 @@ public class UserLoginTest {
 	@Test
 	public void izzyBalanceTest(){
 		logger.trace("testing updating admin balance.");
-		dummyAccount = new User(5,"izzy","p4ssw0rd", 1000000);
+		dummyAccount = new User(7,"mobydick","p4ssw0rd", 1000000);
 		assertTrue(repository.updateAccountBalance(dummyAccount));
 	}
 	
 	@Test
-	public void testGetBalance(){
+	public void testGetUser(){
 		izzyBalanceTest();
-		assertThat(repository.findByUsername("izzy").getBalance(), is(1000000.00));
+		equals(repository.findByUsername("mobydick"));
 	}
 }

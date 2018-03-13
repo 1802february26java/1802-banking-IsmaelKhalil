@@ -78,7 +78,7 @@ public class UserRepositoryJdbc implements UserRepository {
 			while(result.next()) {
 				set.add(new User(
 						result.getLong("ACCOUNT_ID"),
-						result.getString("B_USER"),
+						result.getString("B_USERNAME"),
 						result.getString("B_PASSWORD"),
 						result.getDouble("B_BALANCE")
 						));
@@ -177,6 +177,5 @@ public class UserRepositoryJdbc implements UserRepository {
 		return false;
 	}
 }
-
 
 

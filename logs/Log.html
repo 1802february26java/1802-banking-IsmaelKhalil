@@ -5154,3 +5154,1809 @@ Log session start time Tue Mar 13 09:40:48 EDT 2018<br>
 <br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
 <br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
 </td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Mar 13 09:49:25 EDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserLoginTest.java:32</td>
+<td title="Message">testing updating admin balance.</td>
+</tr>
+
+<tr>
+<td>898</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserRepositoryJdbc.java:158</td>
+<td title="Message">getting statement object in update account</td>
+</tr>
+
+<tr>
+<td>1093</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserRepositoryJdbc.java:164</td>
+<td title="Message">parameters for update of account set</td>
+</tr>
+
+<tr>
+<td>1534</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserRepositoryJdbc.java:173</td>
+<td title="Message">exception thrown while updating </td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
+<br>&nbsp;&nbsp;&nbsp;&nbsp;
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:943)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1075)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3820)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3897)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1361)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.UserRepositoryJdbc.updateAccountBalance(UserRepositoryJdbc.java:168)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at banking.UserLoginTest.izzyBalanceTest(UserLoginTest.java:34)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at banking.UserLoginTest.testGetBalance(UserLoginTest.java:39)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.reflect.Method.invoke(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+</td></tr>
+
+<tr>
+<td>1549</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserLoginTest.java:32</td>
+<td title="Message">testing updating admin balance.</td>
+</tr>
+
+<tr>
+<td>1815</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserRepositoryJdbc.java:158</td>
+<td title="Message">getting statement object in update account</td>
+</tr>
+
+<tr>
+<td>1815</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserRepositoryJdbc.java:164</td>
+<td title="Message">parameters for update of account set</td>
+</tr>
+
+<tr>
+<td>1925</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserRepositoryJdbc.java:173</td>
+<td title="Message">exception thrown while updating </td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
+<br>&nbsp;&nbsp;&nbsp;&nbsp;
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:943)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1075)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3820)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3897)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1361)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.UserRepositoryJdbc.updateAccountBalance(UserRepositoryJdbc.java:168)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at banking.UserLoginTest.izzyBalanceTest(UserLoginTest.java:34)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.reflect.Method.invoke(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Mar 13 09:49:47 EDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserLoginTest.java:32</td>
+<td title="Message">testing updating admin balance.</td>
+</tr>
+
+<tr>
+<td>821</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserRepositoryJdbc.java:158</td>
+<td title="Message">getting statement object in update account</td>
+</tr>
+
+<tr>
+<td>1000</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserRepositoryJdbc.java:164</td>
+<td title="Message">parameters for update of account set</td>
+</tr>
+
+<tr>
+<td>1094</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserRepositoryJdbc.java:173</td>
+<td title="Message">exception thrown while updating </td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
+<br>&nbsp;&nbsp;&nbsp;&nbsp;
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:943)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1075)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3820)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3897)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1361)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.UserRepositoryJdbc.updateAccountBalance(UserRepositoryJdbc.java:168)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at banking.UserLoginTest.izzyBalanceTest(UserLoginTest.java:34)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at banking.UserLoginTest.testGetBalance(UserLoginTest.java:39)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.reflect.Method.invoke(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+</td></tr>
+
+<tr>
+<td>1094</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserLoginTest.java:32</td>
+<td title="Message">testing updating admin balance.</td>
+</tr>
+
+<tr>
+<td>1391</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserRepositoryJdbc.java:158</td>
+<td title="Message">getting statement object in update account</td>
+</tr>
+
+<tr>
+<td>1391</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserRepositoryJdbc.java:164</td>
+<td title="Message">parameters for update of account set</td>
+</tr>
+
+<tr>
+<td>1516</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserRepositoryJdbc.java:173</td>
+<td title="Message">exception thrown while updating </td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
+<br>&nbsp;&nbsp;&nbsp;&nbsp;
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:943)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1075)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3820)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3897)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1361)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.UserRepositoryJdbc.updateAccountBalance(UserRepositoryJdbc.java:168)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at banking.UserLoginTest.izzyBalanceTest(UserLoginTest.java:34)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.reflect.Method.invoke(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Mar 13 09:49:53 EDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserLoginTest.java:32</td>
+<td title="Message">testing updating admin balance.</td>
+</tr>
+
+<tr>
+<td>852</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserRepositoryJdbc.java:158</td>
+<td title="Message">getting statement object in update account</td>
+</tr>
+
+<tr>
+<td>1043</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserRepositoryJdbc.java:164</td>
+<td title="Message">parameters for update of account set</td>
+</tr>
+
+<tr>
+<td>1119</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserRepositoryJdbc.java:173</td>
+<td title="Message">exception thrown while updating </td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
+<br>&nbsp;&nbsp;&nbsp;&nbsp;
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:943)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1075)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3820)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3897)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1361)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.UserRepositoryJdbc.updateAccountBalance(UserRepositoryJdbc.java:168)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at banking.UserLoginTest.izzyBalanceTest(UserLoginTest.java:34)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at banking.UserLoginTest.testGetBalance(UserLoginTest.java:39)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.reflect.Method.invoke(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+</td></tr>
+
+<tr>
+<td>1135</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserLoginTest.java:32</td>
+<td title="Message">testing updating admin balance.</td>
+</tr>
+
+<tr>
+<td>1378</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserRepositoryJdbc.java:158</td>
+<td title="Message">getting statement object in update account</td>
+</tr>
+
+<tr>
+<td>1378</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserRepositoryJdbc.java:164</td>
+<td title="Message">parameters for update of account set</td>
+</tr>
+
+<tr>
+<td>1456</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserRepositoryJdbc.java:173</td>
+<td title="Message">exception thrown while updating </td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
+<br>&nbsp;&nbsp;&nbsp;&nbsp;
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:943)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1075)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3820)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3897)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1361)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.UserRepositoryJdbc.updateAccountBalance(UserRepositoryJdbc.java:168)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at banking.UserLoginTest.izzyBalanceTest(UserLoginTest.java:34)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.reflect.Method.invoke(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Mar 13 09:54:24 EDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserLoginTest.java:30</td>
+<td title="Message">testing updating admin balance.</td>
+</tr>
+
+<tr>
+<td>953</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserRepositoryJdbc.java:158</td>
+<td title="Message">getting statement object in update account</td>
+</tr>
+
+<tr>
+<td>1130</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserRepositoryJdbc.java:164</td>
+<td title="Message">parameters for update of account set</td>
+</tr>
+
+<tr>
+<td>1223</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserRepositoryJdbc.java:173</td>
+<td title="Message">exception thrown while updating </td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
+<br>&nbsp;&nbsp;&nbsp;&nbsp;
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:943)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1075)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3820)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3897)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1361)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.UserRepositoryJdbc.updateAccountBalance(UserRepositoryJdbc.java:168)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at banking.UserLoginTest.izzyUserTest(UserLoginTest.java:32)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.reflect.Method.invoke(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Mar 13 09:54:57 EDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserLoginTest.java:32</td>
+<td title="Message">testing updating admin balance.</td>
+</tr>
+
+<tr>
+<td>866</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserRepositoryJdbc.java:158</td>
+<td title="Message">getting statement object in update account</td>
+</tr>
+
+<tr>
+<td>1050</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserRepositoryJdbc.java:164</td>
+<td title="Message">parameters for update of account set</td>
+</tr>
+
+<tr>
+<td>1144</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserRepositoryJdbc.java:173</td>
+<td title="Message">exception thrown while updating </td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
+<br>&nbsp;&nbsp;&nbsp;&nbsp;
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:943)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1075)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3820)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3897)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1361)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.UserRepositoryJdbc.updateAccountBalance(UserRepositoryJdbc.java:168)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at banking.UserLoginTest.izzyBalanceTest(UserLoginTest.java:34)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at banking.UserLoginTest.testGetUser(UserLoginTest.java:39)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.reflect.Method.invoke(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+</td></tr>
+
+<tr>
+<td>1159</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserLoginTest.java:32</td>
+<td title="Message">testing updating admin balance.</td>
+</tr>
+
+<tr>
+<td>1476</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserRepositoryJdbc.java:158</td>
+<td title="Message">getting statement object in update account</td>
+</tr>
+
+<tr>
+<td>1476</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserRepositoryJdbc.java:164</td>
+<td title="Message">parameters for update of account set</td>
+</tr>
+
+<tr>
+<td>1570</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserRepositoryJdbc.java:173</td>
+<td title="Message">exception thrown while updating </td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
+<br>&nbsp;&nbsp;&nbsp;&nbsp;
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:943)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1075)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3820)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3897)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1361)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.UserRepositoryJdbc.updateAccountBalance(UserRepositoryJdbc.java:168)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at banking.UserLoginTest.izzyBalanceTest(UserLoginTest.java:34)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.lang.reflect.Method.invoke(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Mar 13 09:56:05 EDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserRepositoryJdbc.java:127</td>
+<td title="Message">getting statement obj in specific select accounts</td>
+</tr>
+
+<tr>
+<td>305</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserRepositoryJdbc.java:146</td>
+<td title="Message">Error while selecting account by user name</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
+<br>&nbsp;&nbsp;&nbsp;&nbsp;
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:776)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:897)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1034)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3820)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:3867)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:1502)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.UserRepositoryJdbc.findByUsername(UserRepositoryJdbc.java:131)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.service.ServiceUtil.login(ServiceUtil.java:34)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.controller.Controller.openBank(Controller.java:45)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.Main.main(Main.java:14)
+</td></tr>
+
+<tr>
+<td>7562</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserRepositoryJdbc.java:127</td>
+<td title="Message">getting statement obj in specific select accounts</td>
+</tr>
+
+<tr>
+<td>7650</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserRepositoryJdbc.java:146</td>
+<td title="Message">Error while selecting account by user name</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
+<br>&nbsp;&nbsp;&nbsp;&nbsp;
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:776)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:897)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1034)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3820)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:3867)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:1502)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.UserRepositoryJdbc.findByUsername(UserRepositoryJdbc.java:131)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.service.ServiceUtil.login(ServiceUtil.java:34)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.controller.Controller.openBank(Controller.java:45)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.Main.main(Main.java:14)
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Mar 13 10:08:29 EDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserRepositoryJdbc.java:36</td>
+<td title="Message">getting statement object in insert account</td>
+</tr>
+
+<tr>
+<td>192</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserRepositoryJdbc.java:44</td>
+<td title="Message">parameters for insertion of account set</td>
+</tr>
+
+<tr>
+<td>280</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserRepositoryJdbc.java:51</td>
+<td title="Message">exception thrown while inserting </td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
+<br>&nbsp;&nbsp;&nbsp;&nbsp;
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:943)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1075)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3820)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3897)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1361)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.UserRepositoryJdbc.insert(UserRepositoryJdbc.java:46)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.service.ServiceUtil.register(ServiceUtil.java:62)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.controller.Controller.openBank(Controller.java:94)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.Main.main(Main.java:14)
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Mar 13 10:12:57 EDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserRepositoryJdbc.java:36</td>
+<td title="Message">getting statement object in insert account</td>
+</tr>
+
+<tr>
+<td>201</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserRepositoryJdbc.java:44</td>
+<td title="Message">parameters for insertion of account set</td>
+</tr>
+
+<tr>
+<td>295</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserRepositoryJdbc.java:51</td>
+<td title="Message">exception thrown while inserting </td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
+<br>&nbsp;&nbsp;&nbsp;&nbsp;
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:943)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1075)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3820)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3897)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1361)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.UserRepositoryJdbc.insert(UserRepositoryJdbc.java:46)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.service.ServiceUtil.register(ServiceUtil.java:62)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.controller.Controller.openBank(Controller.java:94)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.Main.main(Main.java:14)
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Mar 13 10:15:28 EDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserRepositoryJdbc.java:36</td>
+<td title="Message">getting statement object in insert account</td>
+</tr>
+
+<tr>
+<td>208</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserRepositoryJdbc.java:44</td>
+<td title="Message">parameters for insertion of account set</td>
+</tr>
+
+<tr>
+<td>286</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserRepositoryJdbc.java:51</td>
+<td title="Message">exception thrown while inserting </td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
+<br>&nbsp;&nbsp;&nbsp;&nbsp;
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:943)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1075)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3820)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3897)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1361)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.UserRepositoryJdbc.insert(UserRepositoryJdbc.java:46)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.service.ServiceUtil.register(ServiceUtil.java:62)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.controller.Controller.openBank(Controller.java:94)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.Main.main(Main.java:14)
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Mar 13 10:17:10 EDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserRepositoryJdbc.java:36</td>
+<td title="Message">getting statement object in insert account</td>
+</tr>
+
+<tr>
+<td>191</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserRepositoryJdbc.java:44</td>
+<td title="Message">parameters for insertion of account set</td>
+</tr>
+
+<tr>
+<td>285</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserRepositoryJdbc.java:51</td>
+<td title="Message">exception thrown while inserting </td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
+<br>&nbsp;&nbsp;&nbsp;&nbsp;
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:943)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1075)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3820)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3897)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeUpdate(OraclePreparedStatementWrapper.java:1361)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.UserRepositoryJdbc.insert(UserRepositoryJdbc.java:46)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.service.ServiceUtil.register(ServiceUtil.java:62)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.controller.Controller.openBank(Controller.java:94)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.Main.main(Main.java:14)
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Mar 13 10:28:31 EDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserRepositoryJdbc.java:127</td>
+<td title="Message">getting statement obj in specific select accounts</td>
+</tr>
+
+<tr>
+<td>289</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserRepositoryJdbc.java:146</td>
+<td title="Message">Error while selecting account by user name</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
+<br>&nbsp;&nbsp;&nbsp;&nbsp;
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:776)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:897)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1034)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3820)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:3867)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:1502)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.UserRepositoryJdbc.findByUsername(UserRepositoryJdbc.java:131)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.service.ServiceUtil.login(ServiceUtil.java:34)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.controller.Controller.openBank(Controller.java:45)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.Main.main(Main.java:14)
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Mar 13 10:33:41 EDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserRepositoryJdbc.java:127</td>
+<td title="Message">getting statement obj in specific select accounts</td>
+</tr>
+
+<tr>
+<td>274</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserRepositoryJdbc.java:146</td>
+<td title="Message">Error while selecting account by user name</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
+<br>&nbsp;&nbsp;&nbsp;&nbsp;
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:776)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:897)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1034)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3820)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:3867)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:1502)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.UserRepositoryJdbc.findByUsername(UserRepositoryJdbc.java:131)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.service.ServiceUtil.login(ServiceUtil.java:34)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.controller.Controller.openBank(Controller.java:45)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.Main.main(Main.java:14)
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Mar 13 10:36:14 EDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserRepositoryJdbc.java:127</td>
+<td title="Message">getting statement obj in specific select accounts</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Mar 13 10:41:33 EDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserRepositoryJdbc.java:146</td>
+<td title="Message">Error while selecting account by user name</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: ORA-01017: invalid username/password; logon denied
+<br>&nbsp;&nbsp;&nbsp;&nbsp;
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:392)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:385)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIfun.processError(T4CTTIfun.java:938)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIoauthenticate.processError(T4CTTIoauthenticate.java:480)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:416)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:825)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:596)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.PhysicalConnection.&lt;init&gt;(PhysicalConnection.java:715)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CConnection.&lt;init&gt;(T4CConnection.java:385)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:30)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:564)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.sql.DriverManager.getConnection(Unknown Source)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:18)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.UserRepositoryJdbc.findByUsername(UserRepositoryJdbc.java:123)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.service.ServiceUtil.login(ServiceUtil.java:34)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.controller.Controller.openBank(Controller.java:45)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.Main.main(Main.java:14)
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Mar 13 10:43:19 EDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserRepositoryJdbc.java:127</td>
+<td title="Message">getting statement obj in specific select accounts</td>
+</tr>
+
+<tr>
+<td>7567</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserRepositoryJdbc.java:127</td>
+<td title="Message">getting statement obj in specific select accounts</td>
+</tr>
+
+<tr>
+<td>7597</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserRepositoryJdbc.java:146</td>
+<td title="Message">Error while selecting account by user name</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: Invalid column name
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OracleStatement.getColumnIndex(OracleStatement.java:3965)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.InsensitiveScrollableResultSet.findColumn(InsensitiveScrollableResultSet.java:299)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.GeneratedResultSet.getLong(GeneratedResultSet.java:1361)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.UserRepositoryJdbc.findByUsername(UserRepositoryJdbc.java:136)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.service.ServiceUtil.login(ServiceUtil.java:34)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.controller.Controller.openBank(Controller.java:45)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.Main.main(Main.java:14)
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Mar 13 10:45:20 EDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserRepositoryJdbc.java:127</td>
+<td title="Message">getting statement obj in specific select accounts</td>
+</tr>
+
+<tr>
+<td>258</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserRepositoryJdbc.java:146</td>
+<td title="Message">Error while selecting account by user name</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: Invalid column name
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OracleStatement.getColumnIndex(OracleStatement.java:3965)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.InsensitiveScrollableResultSet.findColumn(InsensitiveScrollableResultSet.java:299)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.GeneratedResultSet.getLong(GeneratedResultSet.java:1361)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.UserRepositoryJdbc.findByUsername(UserRepositoryJdbc.java:136)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.service.ServiceUtil.login(ServiceUtil.java:34)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.controller.Controller.openBank(Controller.java:45)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.Main.main(Main.java:14)
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Mar 13 10:50:50 EDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>ConnectionUtil.java:33</td>
+<td title="Message">Connection successful</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Mar 13 10:51:00 EDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserRepositoryJdbc.java:127</td>
+<td title="Message">getting statement obj in specific select accounts</td>
+</tr>
+
+<tr>
+<td>305</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserRepositoryJdbc.java:146</td>
+<td title="Message">Error while selecting account by user name</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.sql.SQLException: Invalid column name
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.OracleStatement.getColumnIndex(OracleStatement.java:3965)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.InsensitiveScrollableResultSet.findColumn(InsensitiveScrollableResultSet.java:299)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at oracle.jdbc.driver.GeneratedResultSet.getLong(GeneratedResultSet.java:1361)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.repository.UserRepositoryJdbc.findByUsername(UserRepositoryJdbc.java:136)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.service.ServiceUtil.login(ServiceUtil.java:34)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.controller.Controller.openBank(Controller.java:45)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.revature.Main.main(Main.java:14)
+</td></tr>
+
+<tr>
+<td>8346</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserRepositoryJdbc.java:127</td>
+<td title="Message">getting statement obj in specific select accounts</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Mar 13 10:52:16 EDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserRepositoryJdbc.java:127</td>
+<td title="Message">getting statement obj in specific select accounts</td>
+</tr>
+
+<tr>
+<td>422</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserRepositoryJdbc.java:127</td>
+<td title="Message">getting statement obj in specific select accounts</td>
+</tr>
+
+<tr>
+<td>72385</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserRepositoryJdbc.java:158</td>
+<td title="Message">getting statement object in update account</td>
+</tr>
+
+<tr>
+<td>72385</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserRepositoryJdbc.java:164</td>
+<td title="Message">parameters for update of account set</td>
+</tr>
+
+<tr>
+<td>72433</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserRepositoryJdbc.java:169</td>
+<td title="Message">account updated succefully</td>
+</tr>
+
+<tr>
+<td>79056</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserRepositoryJdbc.java:158</td>
+<td title="Message">getting statement object in update account</td>
+</tr>
+
+<tr>
+<td>79064</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserRepositoryJdbc.java:164</td>
+<td title="Message">parameters for update of account set</td>
+</tr>
+
+<tr>
+<td>79097</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserRepositoryJdbc.java:169</td>
+<td title="Message">account updated succefully</td>
+</tr>
+
+<tr>
+<td>113433</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserRepositoryJdbc.java:127</td>
+<td title="Message">getting statement obj in specific select accounts</td>
+</tr>
+
+<tr>
+<td>113651</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserRepositoryJdbc.java:127</td>
+<td title="Message">getting statement obj in specific select accounts</td>
+</tr>
+
+<tr>
+<td>179064</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserRepositoryJdbc.java:127</td>
+<td title="Message">getting statement obj in specific select accounts</td>
+</tr>
+
+<tr>
+<td>179313</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserRepositoryJdbc.java:127</td>
+<td title="Message">getting statement obj in specific select accounts</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Test Log HTML</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Mar 13 14:19:36 EDT 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserRepositoryJdbc.java:127</td>
+<td title="Message">getting statement obj in specific select accounts</td>
+</tr>
+
+<tr>
+<td>571</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.revature.util.ConnectionUtil category">com.revature.util.ConnectionUtil</td>
+<td>UserRepositoryJdbc.java:127</td>
+<td title="Message">getting statement obj in specific select accounts</td>
+</tr>
