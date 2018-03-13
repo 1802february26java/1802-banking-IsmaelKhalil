@@ -1,102 +1,107 @@
 package com.revature.model;
 
-public class User {
+import com.revature.exception.BounceException;
 
-	public long accountId;
-	private String firstName;
-	private String lastName;
+public class User {
+	
+	
+	/*
+	 * CREATE TABLE BANKACCOUNT
+(
+  ACCOUNT_ID NUMBER,
+  B_USER VARCHAR2(100) NOT NULL,
+  B_PASSWORD VARCHAR2(100) NOT NULL,
+  B_BALANCE NUMBER(38,3) DEFAULT 0,
+  CONSTRAINT PK_BANKACCOUNT PRIMARY KEY (ACCOUNT_ID)
+);
+	 * 
+	 */
+
+	private long userId;
 	private String username;
 	private String password;
 	private double balance;
 	
-	
-	public User(long accountId, String firstName, String lastName, String username, String password, double balance) {
+	public User(long userId, String username, String password){
 		super();
-		this.accountId = accountId;
-		this.firstName = firstName;
-		this.lastName = lastName;
+		this.userId = userId;
+		this.username = username;
+		this.password = password;
+	}
+
+	public User(long userId, String username, String password, double balance) {
+		super();
+		this.userId = userId;
 		this.username = username;
 		this.password = password;
 		this.balance = balance;
 	}
 
-
-	public long getAccountId() {
-		return accountId;
+	public long getuserId() {
+		return userId;
 	}
 
-
-	public void setAccountId(long accountId) {
-		this.accountId = accountId;
+	public void setuserId(long userId) {
+		this.userId = userId;
 	}
-
-
-	public String getFirstName() {
-		return firstName;
-	}
-
-
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
-	}
-
-
-	public String getLastName() {
-		return lastName;
-	}
-
-
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
-	}
-
 
 	public String getUsername() {
 		return username;
 	}
 
-
 	public void setUsername(String username) {
 		this.username = username;
 	}
-
 
 	public String getPassword() {
 		return password;
 	}
 
-
 	public void setPassword(String password) {
 		this.password = password;
 	}
-
 
 	public double getBalance() {
 		return balance;
 	}
 
-
-	public void setBalance(double balance) {
-		this.balance = balance;
+	public void deposit(double balance) {
+		this.balance += balance;
 	}
-
+	
+	public void withdraw(double balance) throws BounceException{
+		this.balance -= balance;
+		
+		if(this.balance < 0) {
+			throw new BounceException("Insufficient balance, you just over-drew");
+		}
+	}
 
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
+		result = prime * result + (int) (userId ^ (userId >>> 32));
 		long temp;
 		temp = Double.doubleToLongBits(balance);
 		result = prime * result + (int) (temp ^ (temp >>> 32));
-		result = prime * result + (int) (accountId ^ (accountId >>> 32));
-		result = prime * result + ((firstName == null) ? 0 : firstName.hashCode());
-		result = prime * result + ((lastName == null) ? 0 : lastName.hashCode());
 		result = prime * result + ((password == null) ? 0 : password.hashCode());
 		result = prime * result + ((username == null) ? 0 : username.hashCode());
 		return result;
 	}
 
-
+	//login check
+	public boolean authenticate(String username, String password) {
+		
+		if(this.username.equals(username) && this.password.equals(password)){
+			return true;
+		}
+		
+		//add exception?
+		return false;
+	}
+	
+	
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -106,19 +111,9 @@ public class User {
 		if (getClass() != obj.getClass())
 			return false;
 		User other = (User) obj;
+		if (userId != other.userId)
+			return false;
 		if (Double.doubleToLongBits(balance) != Double.doubleToLongBits(other.balance))
-			return false;
-		if (accountId != other.accountId)
-			return false;
-		if (firstName == null) {
-			if (other.firstName != null)
-				return false;
-		} else if (!firstName.equals(other.firstName))
-			return false;
-		if (lastName == null) {
-			if (other.lastName != null)
-				return false;
-		} else if (!lastName.equals(other.lastName))
 			return false;
 		if (password == null) {
 			if (other.password != null)
@@ -133,12 +128,13 @@ public class User {
 		return true;
 	}
 
-
 	@Override
 	public String toString() {
-		return "User [accountId=" + accountId + ", firstName=" + firstName + ", lastName=" + lastName
-				+ ", username=" + username + ", password=" + password + ", balance=" + balance + "]";
-	}	
+		return "BankAccount [userId=" + userId + ", username=" + username + ", password=" + password
+				+ ", balance=" + balance + "]";
+	};
+	
+	
 	
 	
 }

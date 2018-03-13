@@ -1,6 +1,5 @@
 package com.revature.repository;
 
-import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -15,83 +14,62 @@ import com.revature.util.ConnectionUtil;
 
 public class UserRepositoryJdbc implements UserRepository {
 
-	private static Logger logger = Logger.getLogger(UserRepositoryJdbc.class);
-	
-	/*
-	 * Singleton Logic
-	 */
-	
-	private static UserRepository repository = new UserRepositoryJdbc();
+	private static Logger logger = Logger.getLogger(ConnectionUtil.class);
+
+	private static UserRepositoryJdbc repository = new UserRepositoryJdbc();
+
 	
 	private UserRepositoryJdbc() {}
 	
 	public static UserRepository getInstance() {
-//		// We don't need this part because we are init inline
-//		if(repository == null) {
-//			return new UserRepositoryJdbc();
-//		}
 		return repository;
 	}
 	
+	
 	@Override
-	public boolean insert(User user) {
-		try(Connection connection = ConnectionUtil.getConnection()) {
+	public boolean insert(User account) {
+		try(Connection connection = ConnectionUtil.getConnection()){
 			int parameterIndex = 0;
-			String sql = "INSERT INTO BANK_ACCOUNT(ACCOUNT_ID, B_FIRST_NAME, B_LAST_NAME, B_USERNAME, B_PASSWORD, B_BALANCE) VALUES(?,?,?,?,?,?)";
-		
-			logger.trace("Getting statement object in insert BANK_ACCOUNT.");
-			PreparedStatement statement = connection.prepareStatement(sql);
-			statement.setLong(++parameterIndex,  user.getAccountId());
-			statement.setString(++parameterIndex,  user.getFirstName());
-			statement.setString(++parameterIndex, user.getLastName());;
-			statement.setString(++parameterIndex, user.getUsername());
-			statement.setString(++parameterIndex, user.getPassword());
-			statement.setDouble(++parameterIndex, user.getBalance());
 			
-			logger.trace("Parameters for insertion of User set.");
-			if(statement.executeUpdate() > 0) {
-				logger.trace("User inserted successfully.");
+			String sq1="INSERT INTO BANK_ACCOUNT(ACCOUNT_ID,B_USERNAME, B_PASSWORD, B_BALANCE ) VALUES(?,?,?,?)";
+		
+			logger.trace("getting statement object in insert account");
+			
+			PreparedStatement statement = connection.prepareStatement(sq1);
+			statement.setLong(++parameterIndex, account.getuserId());
+			statement.setString(++parameterIndex, account.getUsername());
+			statement.setString(++parameterIndex, account.getPassword());
+			statement.setDouble(++parameterIndex, account.getBalance());
+			
+			logger.trace("parameters for insertion of account set");
+			
+			if(statement.executeUpdate() > 0){
+				logger.trace("account inserted succefully");
 				return true;
 			}
 		} catch (SQLException e) {
-			logger.error("Exception thrown while inserting new User", e);
+			logger.error("exception thrown while inserting ", e);
 		}
-		return false;
-	}
-	
-	@Override
-	public User findByFirstName(String firstName) {
-		logger.trace("Getting User by first name.");
-		try(Connection connection = ConnectionUtil.getConnection()) {
-			int parameterIndex = 0;
-			String sql = "SELECT * FROM CELEBRITY WHERE B_FIRST_NAME = ?";
-			
-			PreparedStatement statement = connection.prepareStatement(sql);
-			statement.setString(++parameterIndex, firstName);
-			ResultSet result = statement.executeQuery();
 		
-			if(result.next()) {
-				return new User(
-						result.getLong("BANK_ID"),
-						result.getString("B_FIRST_NAME"),
-						result.getString("B_LAST_NAME"),
-						result.getString("B_USERNAME"),
-						result.getString("B_PASSWORD"),
-						result.getDouble("B_BALANCE")
-						); //Copy paste from set, modify code a bit, and return first one you find
-			}
-			
-		} catch (SQLException e) {
-			logger.error("Error while selecting User by name.", e);
-		}
-		return null;
+		
+		return false;
 	}
 
 	@Override
+	public boolean insertProcedure(User account) {
+		return false;
+	}
+	
+	
+	
+
+	@Override
 	public Set<User> selectAll() {
-		logger.trace("Getting all Users.");
-		try(Connection connection = ConnectionUtil.getConnection()) {
+		try(Connection connection = ConnectionUtil.getConnection()){
 			String sql = "SELECT * FROM BANK_ACCOUNT";
+			
+			logger.trace("getting statement obj in select all accounts");
+			
 			PreparedStatement statement = connection.prepareStatement(sql);
 			
 			ResultSet result = statement.executeQuery();
@@ -99,36 +77,106 @@ public class UserRepositoryJdbc implements UserRepository {
 			Set<User> set = new HashSet<>();
 			while(result.next()) {
 				set.add(new User(
-						result.getLong("BANK_ID"),
-						result.getString("B_FIRST_NAME"),
-						result.getString("B_LAST_NAME"),
-						result.getString("B_USERNAME"),
+						result.getLong("ACCOUNT_ID"),
+						result.getString("B_USER"),
 						result.getString("B_PASSWORD"),
 						result.getDouble("B_BALANCE")
 						));
 			}
+			
 			return set;
+			
 		} catch (SQLException e) {
-			logger.error("Error while selecting all users.", e);
+			
+			logger.error("Error while selecting all accounts",e);
 		}
 		return null;
 	}
-	
-	public static void main(String[] args) {
-		UserRepository repository = new UserRepositoryJdbc();
-		
-//		Testing Insert
-//		repository.insert(new Celebrity(10, "Beyonce", "Giselle", "Beyonce", "F"));
-//		System.out.println(repository.selectAll());
-		logger.info(repository.insertProcedure(new User(1, "Ismael", "Khalil", "ismaelkhalil95", "p4ssw0rd", 200)));
-		logger.info(repository.selectAll());
-		logger.info(repository.findByFirstName("Ismael"));
+
+	@Override
+	public Set<String> selectUsers() {
+		try(Connection connection = ConnectionUtil.getConnection()){
+			String sql = "SELECT * FROM BANK_ACCOUNT";
+			
+			logger.trace("getting statement obj in select all accounts");
+			
+			PreparedStatement statement = connection.prepareStatement(sql);
+			
+			ResultSet result = statement.executeQuery();
+			
+			Set<String> set = new HashSet<>();
+			while(result.next()) {
+				set.add(new String(result.getString("B_USERNAME")));
+			}
+			
+			return set;
+			
+		} catch (SQLException e) {
+			
+			logger.error("Error while selecting all accounts",e);
+		}
+		return null;
 	}
 
 	@Override
-	public boolean insertProcedure(User user) {
-		// TODO Auto-generated method stub
+	public User findByUsername(String username) {
+		try(Connection connection = ConnectionUtil.getConnection()){
+			int parameterIndex = 0;
+			String sql = "SELECT * FROM BANK_ACCOUNT WHERE B_USERNAME = ?";
+			
+			logger.trace("getting statement obj in specific select accounts");
+			
+			PreparedStatement statement = connection.prepareStatement(sql);
+			statement.setString(++parameterIndex, username);
+			ResultSet result = statement.executeQuery();
+			
+			
+			if(result.next()) {
+				return new User(
+						result.getLong("ACCOUNT_ID"),
+						result.getString("B_USERNAME"),
+						result.getString("B_PASSWORD"),
+						result.getDouble("B_BALANCE"));
+			}
+			
+			
+			
+		} catch (SQLException e) {
+			
+			logger.error("Error while selecting account by user name",e);
+		}
+		return null;
+	}
+
+	@Override
+	public boolean updateAccountBalance(User account) {
+		try(Connection connection = ConnectionUtil.getConnection()){
+			int parameterIndex = 0;
+			
+			String sq1="UPDATE BANK_ACCOUNT SET B_BALANCE = ? WHERE B_USERNAME = ?";
+		
+			logger.trace("getting statement object in update account");
+			
+			PreparedStatement statement = connection.prepareStatement(sq1);
+			statement.setDouble(++parameterIndex, account.getBalance());
+			statement.setString(++parameterIndex, account.getUsername());
+			
+			logger.trace("parameters for update of account set");
+			//System.out.println(statement.toString());
+			
+			
+			if(statement.executeUpdate() > 0){
+				logger.trace("account updated succefully");
+				return true;
+			}
+		} catch (SQLException e) {
+			logger.error("exception thrown while updating ", e);
+		}
+		
+		
 		return false;
 	}
-	
 }
+
+
+
