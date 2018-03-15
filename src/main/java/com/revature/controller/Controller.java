@@ -23,7 +23,7 @@ public class Controller {
 
 
 	private HashMap<String, User> accounts;
-	private User currentAccount;
+	private User loggedAccount;
 	
 	
 	public static Controller getInstance(){
@@ -42,7 +42,7 @@ public class Controller {
 				case "login":
 					if(command.length == 3){
 						try {
-							currentAccount = ServiceUtil.getInstance().login(command[1].toLowerCase(), command[2]);
+							loggedAccount = ServiceUtil.getInstance().login(command[1].toLowerCase(), command[2]);
 						} catch (RejectCredentialsException e) {
 							System.out.println(e.getMessage());
 						}
@@ -56,7 +56,7 @@ public class Controller {
 						try{
 							service.deposit(Double.parseDouble(command[1]));
 						}catch (NumberFormatException e) {
-							System.out.println("Invalid character detected. Numbers only.");
+							System.out.println("Invalid character detected. Please do not enter a $ sign; only enter numbers.");
 						}
 					} else {
 						throw new InvalidInputException();
@@ -69,26 +69,26 @@ public class Controller {
 						} catch (BounceException e) {
 							System.out.println(e.getMessage());
 						}catch (NumberFormatException e) {
-							System.out.println("Invalid character detected. Numbers only.");
+							System.out.println("Invalid character detected. Please do not enter a $ sign; only enter numbers.");
 						}
 					}
 					break;
 
 				case "view":
-					if(currentAccount==null){
-						System.out.println("You must log in to do that.");
+					if(loggedAccount == null){
+						System.out.println("Please log in and try again.");
 					} else {
-						System.out.println("Your current balance is: " +service.getBalance());
+						System.out.println("Your current balance is: " + service.getBalance());
 					}
 					break;
 
 				case "logout":
-					currentAccount = null;
+					loggedAccount = null;
 					break;
 
 				case "register":
 					if(command.length == 3) {
-						if(currentAccount != null) {
+						if(loggedAccount != null) {
 							System.out.println("Already logged in. Please log out to do that.");
 						} else {
 							if(service.getInstance().register(command[1].toLowerCase(), command[2])){
@@ -98,28 +98,29 @@ public class Controller {
 							}
 						}
 					} else {
-						System.out.println("invalid.");
+						System.out.println("Invalid characters.");
 					}
 					break;
-				case "help":
-					System.out.println("available commands: ");
-					System.out.println("login [username] [password]");
-					System.out.println("deposit [amount]");
-					System.out.println("withdraw [amount]");
-					System.out.println("exit");
+				case "commands":
+					System.out.println("Commands: ");
+					System.out.println("To view commands: You're here, aren't you?");
+					System.out.println("To log in: login [username] [password]");
+					System.out.println("To deposit: deposit [amount]");
+					System.out.println("To withdraw: withdraw [amount]");
+					System.out.println("To close the application: exit");
 					break;
 
 				case "exit":
-					if(currentAccount != null){
+					if(loggedAccount != null){
 						service.logout();
 					}
-					System.out.println("Exiting program now.");
+					System.out.println("Exiting program now. Have a good day!");
 					System.exit(0);
 					break;
 				default:
 					throw new InvalidInputException();
 				}
-				System.out.println("How can I help you now?");
+				System.out.println("What do you need?");
 			} catch (InvalidInputException e) {
 				System.out.println(e.getMessage());
 			}

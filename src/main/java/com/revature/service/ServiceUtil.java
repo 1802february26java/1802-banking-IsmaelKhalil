@@ -16,7 +16,7 @@ public class ServiceUtil {
 
 	private static Logger logger = Logger.getLogger(ServiceUtil.class);
 
-	private User currentAccount = null;
+	private User loggedAccount = null;
 	
 	
 	private ServiceUtil(){}
@@ -26,7 +26,7 @@ public class ServiceUtil {
 	}
 	
 	public User getAccount() {
-		return currentAccount;
+		return loggedAccount;
 	}
 	
 	
@@ -35,7 +35,7 @@ public class ServiceUtil {
 			User account = repository.findByUsername(user);
 
 			if(account.getPassword().equals(password)){
-				currentAccount = account;
+				loggedAccount = account;
 
 				System.out.println("You are now logged in");
 				return account;
@@ -47,12 +47,12 @@ public class ServiceUtil {
 	}
 	
 	public boolean logout() {
-		if(currentAccount == null){
-			System.out.println("Nobody is logged in");
+		if(loggedAccount == null){
+			System.out.println("Please log in and try again.");
 			return false;
 		} else {
-			currentAccount = null;
-			System.out.println("Logout successful");
+			loggedAccount = null;
+			System.out.println("Successfully logged out. Have a good day!");
 			return true;
 		}
 	}
@@ -67,38 +67,38 @@ public class ServiceUtil {
 	}
 	
 	public double getBalance(){
-		return currentAccount.getBalance();
+		return loggedAccount.getBalance();
 		
 	}
 	
 	
-	public boolean deposit(double depo)  {
-		if(currentAccount == null){
-			System.out.println("You must login first");
+	public boolean deposit(double plus)  {
+		if(loggedAccount == null){
+			System.out.println("Please log in and try again.");
 			return false;
-		} else if (depo <= 0) {
-			System.out.println("Please enter a valid deposit amount");
+		} else if (plus <= 0) {
+			System.out.println("Invalid amount. Please try again.");
 		} else {
-				currentAccount.deposit(depo);
-				repository.updateAccountBalance(currentAccount);
-				printRecipt();
+				loggedAccount.deposit(plus);
+				repository.updateAccountBalance(loggedAccount);
+				completedTransaction();
 				return true;
 		}
 		
 		return false;
 	}
 	
-	public boolean withdraw(double withd) throws BounceException{
-		if(currentAccount == null){
-			System.out.println("You must login first");
+	public boolean withdraw(double minus) throws BounceException{
+		if(loggedAccount == null){
+			System.out.println("Please log in and try again.");
 			return false;
-		} else if (withd <= 0) {
-			System.out.println("Please enter a valid withdraw amount");
+		} else if (minus <= 0) {
+			System.out.println("Invalid amount. Please try again.");
 		} else {
 			try {
-				currentAccount.withdraw(withd);
-				repository.updateAccountBalance(currentAccount);
-				printRecipt();
+				loggedAccount.withdraw(minus);
+				repository.updateAccountBalance(loggedAccount);
+				completedTransaction();
 				return true;
 				
 			} catch (BounceException e) {
@@ -109,11 +109,9 @@ public class ServiceUtil {
 		return false;
 	}
 	
-	private void printRecipt(){
-		System.out.println("----------------------------------------");
-		System.out.println("| Recipt for account "+ currentAccount.getUsername() + " |");
-		System.out.println("| Current Balance is: " + currentAccount.getBalance() + " |");
-		System.out.println("----------------------------------------");
+	private void completedTransaction(){
+		System.out.println("Thank you "+ loggedAccount.getUsername() + ", have a nice day!");
+		System.out.println("You now have " + loggedAccount.getBalance() + " in your account.");
 	}
 
 	

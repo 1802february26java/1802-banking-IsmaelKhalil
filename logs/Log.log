@@ -2114,3 +2114,83 @@ java.sql.SQLException: Invalid column name
 2018-03-13 10:55:23 TRACE ConnectionUtil:127 - getting statement obj in specific select accounts
 2018-03-13 14:19:44 TRACE ConnectionUtil:127 - getting statement obj in specific select accounts
 2018-03-13 14:19:44 TRACE ConnectionUtil:127 - getting statement obj in specific select accounts
+2018-03-14 15:37:17 TRACE ConnectionUtil:127 - getting statement obj in specific select accounts
+2018-03-14 15:37:18 TRACE ConnectionUtil:127 - getting statement obj in specific select accounts
+2018-03-14 15:37:29 TRACE ConnectionUtil:158 - getting statement object in update account
+2018-03-14 15:37:29 TRACE ConnectionUtil:164 - parameters for update of account set
+2018-03-14 15:37:29 TRACE ConnectionUtil:169 - account updated succefully
+2018-03-14 15:37:31 TRACE ConnectionUtil:158 - getting statement object in update account
+2018-03-14 15:37:31 TRACE ConnectionUtil:164 - parameters for update of account set
+2018-03-14 15:37:31 TRACE ConnectionUtil:169 - account updated succefully
+2018-03-14 15:39:48 INFO  ConnectionUtil:43 - Enter you first name
+2018-03-14 15:40:13 INFO  ConnectionUtil:43 - Enter you username
+2018-03-14 15:40:15 INFO  ConnectionUtil:45 - Enter your password
+2018-03-14 15:40:16 INFO  ConnectionUtil:47 - Login Page
+2018-03-14 15:41:03 INFO  ConnectionUtil:44 - Enter you username
+2018-03-14 15:41:04 INFO  ConnectionUtil:46 - Enter you password
+2018-03-14 15:41:05 INFO  ConnectionUtil:48 - Login Page
+2018-03-14 15:41:57 INFO  ConnectionUtil:44 - Enter you username
+2018-03-14 15:41:59 INFO  ConnectionUtil:46 - Enter you password
+2018-03-14 15:42:00 INFO  ConnectionUtil:48 - Login Page
+2018-03-14 15:42:29 INFO  ConnectionUtil:44 - Enter you username
+2018-03-14 15:42:30 INFO  ConnectionUtil:46 - Enter you password
+2018-03-14 15:48:25 INFO  ConnectionUtil:43 - Enter your username
+2018-03-14 15:48:27 INFO  ConnectionUtil:45 - Enter your password
+2018-03-14 15:49:00 INFO  ConnectionUtil:43 - Enter your username
+2018-03-14 15:49:01 INFO  ConnectionUtil:45 - Enter your password
+2018-03-14 15:49:13 INFO  ConnectionUtil:43 - Enter your username
+2018-03-14 15:49:16 INFO  ConnectionUtil:45 - Enter your password
+2018-03-14 15:49:31 INFO  ConnectionUtil:43 - Enter your username
+2018-03-14 15:49:32 INFO  ConnectionUtil:45 - Enter your password
+2018-03-14 15:50:02 INFO  ConnectionUtil:43 - Enter your username
+2018-03-14 15:50:07 INFO  ConnectionUtil:45 - Enter your password
+2018-03-14 16:11:05 TRACE ConnectionUtil:127 - getting statement obj in specific select accounts
+2018-03-14 16:11:05 TRACE ConnectionUtil:127 - getting statement obj in specific select accounts
+2018-03-14 16:11:17 TRACE ConnectionUtil:158 - getting statement object in update account
+2018-03-14 16:11:17 TRACE ConnectionUtil:164 - parameters for update of account set
+2018-03-14 16:11:17 TRACE ConnectionUtil:169 - account updated succefully
+2018-03-14 16:11:21 TRACE ConnectionUtil:158 - getting statement object in update account
+2018-03-14 16:11:21 TRACE ConnectionUtil:164 - parameters for update of account set
+2018-03-14 16:11:21 TRACE ConnectionUtil:169 - account updated succefully
+2018-03-14 16:16:09 TRACE ConnectionUtil:127 - getting statement obj in specific select accounts
+2018-03-14 16:16:10 TRACE ConnectionUtil:127 - getting statement obj in specific select accounts
+2018-03-14 16:16:17 TRACE ConnectionUtil:158 - getting statement object in update account
+2018-03-14 16:16:17 TRACE ConnectionUtil:164 - parameters for update of account set
+2018-03-14 16:16:17 TRACE ConnectionUtil:169 - account updated succefully
+2018-03-14 16:18:46 TRACE ConnectionUtil:127 - getting statement obj in specific select accounts
+2018-03-14 16:18:47 TRACE ConnectionUtil:127 - getting statement obj in specific select accounts
+2018-03-14 16:18:51 TRACE ConnectionUtil:158 - getting statement object in update account
+2018-03-14 16:18:51 TRACE ConnectionUtil:164 - parameters for update of account set
+2018-03-14 16:18:51 TRACE ConnectionUtil:169 - account updated succefully
+2018-03-14 16:34:01 TRACE ConnectionUtil:127 - getting statement obj in specific select accounts
+2018-03-14 16:34:01 TRACE ConnectionUtil:127 - getting statement obj in specific select accounts
+2018-03-14 16:34:06 TRACE ConnectionUtil:158 - getting statement object in update account
+2018-03-14 16:34:06 TRACE ConnectionUtil:164 - parameters for update of account set
+2018-03-14 16:34:06 TRACE ConnectionUtil:169 - account updated succefully
+2018-03-14 16:34:15 TRACE ConnectionUtil:158 - getting statement object in update account
+2018-03-14 16:34:15 TRACE ConnectionUtil:164 - parameters for update of account set
+2018-03-14 16:34:15 TRACE ConnectionUtil:169 - account updated succefully
+2018-03-14 17:02:43 TRACE ConnectionUtil:127 - getting statement obj in specific select accounts
+2018-03-14 17:02:44 TRACE ConnectionUtil:127 - getting statement obj in specific select accounts
+2018-03-14 17:02:50 TRACE ConnectionUtil:158 - getting statement object in update account
+2018-03-14 17:02:50 TRACE ConnectionUtil:164 - parameters for update of account set
+2018-03-14 17:02:50 TRACE ConnectionUtil:169 - account updated succefully
+2018-03-14 17:02:55 TRACE ConnectionUtil:158 - getting statement object in update account
+2018-03-14 17:02:55 TRACE ConnectionUtil:164 - parameters for update of account set
+2018-03-14 17:02:55 TRACE ConnectionUtil:169 - account updated succefully
+2018-03-14 17:13:04 TRACE ConnectionUtil:127 - getting statement obj in specific select accounts
+2018-03-14 17:13:04 TRACE ConnectionUtil:127 - getting statement obj in specific select accounts
+2018-03-14 17:13:15 TRACE ConnectionUtil:158 - getting statement object in update account
+2018-03-14 17:13:15 TRACE ConnectionUtil:164 - parameters for update of account set
+2018-03-14 17:13:15 TRACE ConnectionUtil:169 - account updated succefully
+2018-03-14 17:13:29 TRACE ConnectionUtil:158 - getting statement object in update account
+2018-03-14 17:13:29 TRACE ConnectionUtil:164 - parameters for update of account set
+2018-03-14 17:13:29 TRACE ConnectionUtil:169 - account updated succefully
+2018-03-14 17:14:24 TRACE ConnectionUtil:127 - getting statement obj in specific select accounts
+2018-03-14 17:14:25 TRACE ConnectionUtil:127 - getting statement obj in specific select accounts
+2018-03-14 17:15:46 TRACE ConnectionUtil:32 - testing updating admin balance.
+2018-03-14 17:15:47 TRACE ConnectionUtil:158 - getting statement object in update account
+2018-03-14 17:15:47 TRACE ConnectionUtil:164 - parameters for update of account set
+2018-03-14 17:15:47 TRACE ConnectionUtil:32 - testing updating admin balance.
+2018-03-14 17:15:47 TRACE ConnectionUtil:158 - getting statement object in update account
+2018-03-14 17:15:47 TRACE ConnectionUtil:164 - parameters for update of account set
